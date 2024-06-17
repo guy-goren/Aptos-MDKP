@@ -44,11 +44,11 @@ def balanced_knapsack_2d(values, weights1, weights2, W1, W2):
     return total_value, selected_items
 
 
-values = [random.randint(1, 10) for _ in range(10)]
-weights1 = [random.randint(1, 5) for _ in range(10)]
-weights2 = [random.randint(1, 7) for _ in range(10)]
-W1 = 20
-W2 = 15
+values = [random.randint(1, 10) for _ in range(1000)]
+weights1 = [random.randint(1, 5) for _ in range(1000)]
+weights2 = [random.randint(1, 7) for _ in range(1000)]
+W1 = 2000
+W2 = 1500
 
 total_value, selected_items = balanced_knapsack_2d(values, weights1, weights2, W1, W2)
 print(f"values: {values}")
